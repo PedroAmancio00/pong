@@ -13,8 +13,7 @@ public class PlayerScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        playerRidgidBody.velocity = new Vector2(0, 0);
+    {        
         if (Input.GetKey(KeyCode.W))
         {
             playerRidgidBody.velocity = new Vector2(0, speed);
@@ -22,6 +21,9 @@ public class PlayerScript : MonoBehaviour
         else if (Input.GetKey(KeyCode.S))
         {
             playerRidgidBody.velocity = new Vector2(0, -speed);
+        }
+        else{
+            playerRidgidBody.velocity = new Vector2(0, 0);
         }
     }
 

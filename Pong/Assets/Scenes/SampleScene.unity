@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRidgidBody: {fileID: 494837476}
-  acceleration: 1.01
+  acceleration: 1.02
   xSpeed: 8
 --- !u!58 &494837475
 CircleCollider2D:

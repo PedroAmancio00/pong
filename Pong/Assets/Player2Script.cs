@@ -14,7 +14,6 @@ public class CpuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerRidgidBody.velocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.UpArrow))
         {
             playerRidgidBody.velocity = new Vector2(0, speed);
@@ -22,6 +21,10 @@ public class CpuScript : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             playerRidgidBody.velocity = new Vector2(0, -speed);
+        }
+        else
+        {
+            playerRidgidBody.velocity = new Vector2(0, 0);
         }
     }
 
